@@ -1,43 +1,58 @@
-/* *{
+*{
   margin: 0;
   padding: 0;
   color: #000;
   font-family: Tahoma;
   text-decoration: none;
 }
-#project .navproct {
-  border: 1px solid #000;
-  margin: 141px;
+#project .grid {
+  /* border: 1px solid #000; */
+  margin: 10px 140px;
   padding: 15px;
   display: flex;
 }
-#project .navproct .box{
-  width: 250px;
-  height: 250px;
-  border: 1px solid #000;
-  margin: 50px auto;
-  display: block;
-  padding: 15px;
-  text-align: center;
-} */
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+#project .grid .box{
+  width: 100%;
+  height: 100%;
+  max-width: 250px;
+  min-width: 50px;
   max-height: 250px;
-  /* border: 1px solid #000; */
-  margin: 20px;
-  /* background-color: #303030; */
-  /* padding: auto; */
+  min-height: 50px;
+  background-color: #000;
+  box-shadow: 0 0 15px #000;
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
 }
-.box{
-margin: 10px;
-/* border: 1px solid #000; */
-/* width: 150px;
-height: 200px; */
-/* margin: auto; */
-background-color: #333;
-background-image: url("");
-width: 100%;
-max-width: 210px;
-min-width: 210px;
+#project .grid .text{
+  margin: 5px 0px 25px 0px;
+}
+#project .grid .text h1{
+  color: #E50914;
+  text-shadow: 0 0 15px #E50914;
+}
+#project .grid .text p{
+  color: #fff;
+  text-shadow: 0 0 15px #fff;
+}
+#project .grid img{
+  width: 100%;
+}
+
+.title{
+  font-weight: bolder;
+  font-family: fantasy;
+  margin: 30px 0
+}
+#project .title h1{
+  text-align: center;
+  font-size: 30pt;
+}
+
+/* Hovers */
+#project .grid .box:hover{
+  max-width: 300px;
+  min-width: 300px;
+  max-height: 200px;
+  min-height: 100px;
 }
