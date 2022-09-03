@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: Tahoma;
+}
+
+.main {
+  /* margin-top: 30px; */
+  background-color: rgb(124, 124, 124);
+}
+#home{
+  height: 750px;
+  background-color: #333;
+  padding-top: 150px;
+}
+#project{
+  height: 750px;
+  background-color: rgb(202, 202, 202);
+  padding-top: 150px;
+}
+#contact{
+  height: 750px;
+  background-color: #333;
+  padding-top: 150px;
+}
+
