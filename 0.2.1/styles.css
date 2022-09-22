@@ -39,6 +39,7 @@ section#sub nav{
   /* align-items: center;
   justify-content: center; */
   text-align: center;
+  padding: 10px;
 }
 section#sub nav ul{
   padding: 20px 0 0 0;
@@ -58,7 +59,9 @@ section#sub nav ul li:hover{
 }
 
 /* MAIN */
-  
+  main{
+    padding: 85px 0 0 0;
+  }
 
 /* SESSÃO Estados */
 section#estados {
