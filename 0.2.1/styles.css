@@ -24,6 +24,15 @@
 .desc2{
   padding: 0 0 0 15px;
 }
+.subtitle{
+  padding: 0 0 0 15px;
+}
+li:hover{
+  border-bottom: 1px solid #000;
+  /* width: 50%; */
+  cursor: default;
+  display: inline;
+}
 
 /* MENU */
 section#sub {
