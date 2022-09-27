@@ -1,4 +1,4 @@
-li<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
@@ -8,79 +8,63 @@ li<!DOCTYPE html>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <section id="sub">
-      <nav>
-        <h1>Experiências da minha vida</h1>
-        <ul>
-          <li><a href="#estados">Estados</a></li>
-          <li><a href="#comidas">Comidas</a></li>
-        </ul>
-      </nav>
-  </section>
+  <header>
+    <a href="#" class="logo">Oque eu fiz!</a>
+    <ul>
+      <li><a href="#cidades">ESTADOS</a></li>
+      <li><a href="#comidas">COMIDAS</a></li>
+    </ul>
+  </header>
+  <section class="banner"></section>
+  <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+          var header = document.querySelector("header");
+          header.classList.toggle("sticky", window.scrollY > 0);
+      })
+  </script>
   <main>
-    <section id="estados">
-      <h3>Estados</h3>
-      <div class="lista">
-        <ul>
-          <li class="title"><a href="#">Rio Grade do Sul</a></li>
-          <li class="subtitle"><a href="#">Porto Alegre</a></li>
-          <li class="subtitle"><a href="#">Gramado</a></li>
-          <li class="subtitle"><a href="#">Osório</a></li>
-          <li class="title"><a href="#">Parana</a></li>
-          <li class="subtitle"><a href="#">Foz do Iguaçu</a></li>
-          <li class="title"><a href="#">São Paulo</a></li>
-          <li class="subtitle"><a href="#">Barretos</a></li>
-          <li class="title"><a href="#">Tocantins</a></li>
-          <li class="subtitle"><a href="#">Tribo Xerente</a></li>
-        </ul>
-      </div>
-      <div class="desc">
-        <h5>Rio Grade do Sul</h5>
-        <p>
-          Viagei muito pelo Rio Grade do Sul e de todos os lugares três deles me marcaram muito. <br> 
-          Porto Alegre, essa cidade me marcou por ter passado uns 30% da minha vida nela e por ser um lugar que frequento até hoje para qualquer coisas desde ver meu avô até trabalhos e meu curso. <br>
-          Gramado, visitei essa cidade a trabalho algumas vezes e como todos que foram eu posso dizer... Que cidade linda!
-          Osório, passei o fim de semana e o feriado do 20 de setembro de 2022 lá e minha observação sobre o local é: Vento. Mds! Quanto vento tem lá, de um lado um vento gelado do outro um sol que queima até a alma kkkk.
-        </p>
-        <h5>Parana</h5>
-        <p>
-          Ah! Lindo Parana, viagei duas vezes para lá e minhas experiências lá foram incriveis. Um vez foi para Curitiba e essa cidade é bem marcante tanto pela cultura quanto pelo estilo de lá que é diferente de tudo que já vi, minha estadia lá foi na comemoração da minha formatura do nono ano e o hotel tava incrível, os locais turisticos e em uma pequena viagem de ônibos estava de frente para aquelas praias lindas do Parana. <br>
-          Minha segunda ida para lá foi em Foz do Iguaçu, as cataratas do iguaçu são muito lindas e a vontade de morar lá é imensa. 
-        </p>
+  <div class="flex">
+    <section id="cidades" class="setor">
+      <h1>CIDADES</h1>
+      <div class="flex">
+        <div class="item item1">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/93/31/db/cidade-de-osorio-e-suas.jpg?w=500&h=-1&s=1" alt="01">
+          <h2>OSÓRIO</h2>
+          <p>Osório, passei o fim de semana e o feriado do 20 de setembro de 2022 lá e minha observação sobre o local é: Vento. Mds! Quanto vento tem lá, de um lado um vento gelado do outro um sol que queima até a alma kkkk.</p>
+        </div>
+        <div class="item item2">
+          <img src="https://www.viagemvaliosa.com/wp-content/uploads/2018/11/Igreja-Matriz-S%C3%A3o-Pedro-Ap%C3%B3stolo-pontos-turisticos-de-gramado.jpg" alt="02">
+          <h2>GRAMADO</h2>
+          <p>Gramado, visitei essa cidade a trabalho algumas vezes e como todos que foram eu posso dizer... Que cidade linda!</p>
+        </div>
+        <div class="item item3">
+          <img src="https://www.rbsdirect.com.br/imagesrc/24923648.jpg?w=1024&h=768&a=c" alt="03">
+          <h2>PORTO ALEGRE</h2>
+          <p>Porto Alegre, essa cidade me marcou por ter passado uns 30% da minha vida nela e por ser um lugar que frequento até hoje para qualquer coisas desde ver meu avô até trabalhos e meu curso.</p>
+        </div>
       </div>
     </section>
-    <section id="comidas">
-    <h3>Comidas</h3>
-    <div class="lista">
-      <dl>
-        <li class="title"><a href="#">Da mamães</a></li>
-        <li class="subtitle"><a href="#">Strogonoff Boffe</a></li>
-        <li class="subtitle"><a href="#">Abobora Recheada</a></li>
-        <li class="title"><a href="#">De viagem</a></li>
-        <li class="subtitle"><a href="#">Pizza</a></li>
-        <li class="subtitle"><a href="#">Xis</a></li>
-        <li class="subtitle"><a href="#">Refirado</a></li>
-        <li class="title"><a href="#">De Tia</a></li>
-        <li class="subtitle"><a href="#">Salada de Batata com churrasco</a></li>
-        <li class="title"><a href="#">De Vó</a></li>
-        <li class="subtitle"><a href="#">PF</a></li>
-      </dl>
-    </div>
-    <div class="desc">
-      <h4>Comida de Mãe</h4>
-      <div class="desc2">
-        <h5>Strogonoff Boffe (Da mamãe)</h5>
-        <p>
-          Cara que comida boa! Nada melhor que comida de mãe, primeira vez que minha mãe fez StrogoBofe pra mim eu tinha seis anos tinhamos acabado de nos mudar para a casa de minha vó, a qual havia falecido alguns meses antes, eu e ela estavamos muito triste por causa disse e minha mãe havia começado a ganhar melhor por estar trabalhando de fotógrafa autônoma, para melhorar os animos minha mãe mesmo não podendo comprar a melhor das carnes pegou um peito de frango o desfiou então com uma caixa de creme de leite e alguns tomates, cebola e pimentão misturou acrescentou alguns de seus temperos de mãe e pronto, StogoBofe. Até hoje todo fim de semana pesso a ela para fazer essa comida, a melhor comida que já comida na vida. 
-        </p>
-        <h5>Abóbora Rechead (Da mamãe)</h5>
-        <p>
-          Essa intenção eu e minha mãe tivemos a alguns anos e mds como deu certo, pegamos uma Abóbora de tamanha médio para pequena abrimos ela por cima e então retiramos tudo de dentro misturamos com batata e cenora e fazemos um purê delicioso cheio de temperos de mãe kkkk, adicionamos frango desfiado e carne moida com um molho que só ela sabe fazer (Muito bom mesmo), colocamos tudo dentro da Abóbora e a colocamos dentro do forno... hmmmmm fica uma delicia!
-        </p>
+    <section id="comidas" class="setor">
+      <h1>COMIDAS</h1>
+      <div class="flex">
+        <div class="item item1">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZab5IHNvE3tJlk3hnoacASv5k0WUY4zEXQWmt3LFcmuWQmNHobiyncsyZieaNTF-VbqS7BP988YlbBofIWPPzvJuKCm3XZE7bcPYmMsA1LBbS_zq8mTddLrO_b331cOVKDr4G9H97xcKJhqcHpsUL8Edgm_LLm81b-_dOPXo7-9Q0S45x-SfTPhan/s1500/strogonoff-de-carne.jpg" alt="01">
+          <h2>Strogonoff Boffe</h2>
+          <p>Cara que comida boa! Nada melhor que comida de mãe, primeira vez que minha mãe fez StrogoBofe pra mim eu tinha seis anos tinhamos acabado de nos mudar para a casa de minha vó, a qual havia falecido alguns meses antes, eu e ela estavamos muito triste por causa disse e minha mãe havia começado a ganhar melhor por estar trabalhando de fotógrafa autônoma, para melhorar os animos minha mãe mesmo não podendo comprar a melhor das carnes pegou um peito de frango o desfiou então com uma caixa de creme de leite e alguns tomates, cebola e pimentão misturou acrescentou alguns de seus temperos de mãe e pronto, StogoBofe. Até hoje todo fim de semana pesso a ela para fazer essa comida, a melhor comida que já comida na vida.</p>
+        </div>
+        <div class="item item2">
+          <img src="https://3.bp.blogspot.com/-lXE46n4IUNI/WwxSQ_Mc_eI/AAAAAAABVlc/VsG8K-QP1Z0W6YOkzQREqWJb20_02jNcgCLcBGAs/s1600/cabotiarecheada-brisandonacozinha-01.jpg" alt="02">
+          <h2>Abóbora Rechead</h2>
+          <p>Essa intenção eu e minha mãe tivemos a alguns anos e mds como deu certo, pegamos uma Abóbora de tamanha médio para pequena abrimos ela por cima e então retiramos tudo de dentro misturamos com batata e cenora e fazemos um purê delicioso cheio de temperos de mãe kkkk, adicionamos frango desfiado e carne moida com um molho que só ela sabe fazer (Muito bom mesmo), colocamos tudo dentro da Abóbora e a colocamos dentro do forno... hmmmmm fica uma delicia!</p>
+        </div>
+        <!-- <div class="item item3">
+          <img src="https://www.rbsdirect.com.br/imagesrc/24923648.jpg?w=1024&h=768&a=c" alt="03">
+          <h2>PORTO ALEGRE</h2>
+          <p>Porto Alegre, essa cidade me marcou por ter passado uns 30% da minha vida nela e por ser um lugar que frequento até hoje para qualquer coisas desde ver meu avô até trabalhos e meu curso.</p> -->
+        </div>
       </div>
-    </div>
     </section>
+  </div>
   </main>
-  <footer></footer>
 </body>
 </html>
