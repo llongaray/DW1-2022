@@ -5,8 +5,55 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teste</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
+
+  <!-- MENU -->
+<header>
+<a href="#" class="logo">llongaray</a>
+<ul>
+  <li><a href="#inicio">INICIO</a></li>
+  <li><a href="#sobre">SOBRE</a></li>
+  <li><a href="#projetos">PROJETOS</a></li>
+  <li><a href="#contato">CONTATO</a></li>
+</ul>
+</header>
+<section class="banner">
+  <div class="hello">
+    <h4>Olá, eu sou o</h4>
+    <h1 class="title">LEONARDO LONGARAY</h1>
+    <p class="top-p">
+    Esse é um exercício da cadeira de 'Desenvolvimento Web - 1' na FUNDATEC. <br>
+    Trabalhando no desenvolvimento de web site via HTML, CSS e JS.
+    </p>
+  </div>
+</section>
+<script type="text/javascript">
+  window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+  })
+</script>
+
+<!-- MAIN -->
+<div class="flex main" id="main">
+    <div class="flex inicio" id="inicio">
+      <div class="item item1">
+      
+      </div>
+    </div>
+    <div class="flex sobre" id="sobre">
+      
+    </div>
+    <div class="flex projetos" id="projetos">
+      
+    </div>
+    <div class="flex contato" id="contato">
+      
+    </div>
+</div>
 </body>
 </html>
+
+<!-- https://theclutch.com.br/wp-content/uploads/2022/06/pc-gamer-thumb-800x450.jpg -->
