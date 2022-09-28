@@ -35,6 +35,9 @@ header .logo {
   letter-spacing: 2px;
   transition: 0.6s;
 }
+header .logo:hover {
+  font-size: 2.2em;
+}
 header ul {
   position: relative;
   display: flex;
@@ -53,6 +56,10 @@ header ul li a {
   letter-spacing: 2px;
   font-weight: 500px;
   transition: 0.6s;
+}
+header ul li:hover a {
+  text-decoration: underline;
+  color: aquamarine;
 }
 .banner {
   position: relative;
