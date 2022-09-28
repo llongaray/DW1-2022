@@ -9,6 +9,7 @@
 body{
   background: #333;
   min-height: 200vh;
+  height: 1000px;
 }
 header{
   position: fixed;
@@ -64,4 +65,16 @@ header ul li a {
 header.sticky .logo,
 header.sticky li a {
   color: #000;
+}
+
+.meio{
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  margin: 250px 0;
+  font-size: 32pt;
+}
+
+.meio p{
+  
 }
