@@ -1,0 +1,27 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BASE */
+  body{
+    background-color: rgb(88, 88, 88);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* DIVs */
+  .container{
+    border: 1px solid black;
+    width: 450px;
+    height: 450px;
+    background-color: white;
+  }
