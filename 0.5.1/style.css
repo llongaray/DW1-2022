@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700,900');
+
 *{
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
   font-style: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 /* BASE */
@@ -16,6 +18,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    color: black;
   }
 
 /* DIVs */
@@ -25,3 +28,92 @@
     height: 450px;
     background-color: white;
   }
+
+/* TITULO */
+.title{
+  text-align: center;
+  margin: 70px  0 20px 0;
+  font-size: 24pt;
+}
+
+/* LINKs */
+.links{
+  text-align: center;
+  font-size: 9pt;
+  margin-bottom: 25px;
+}
+.links a{
+  margin: 10px;
+  border: 1px solid #8FD14F;
+  border-radius: 20px;
+  padding: 8px;
+  color: aliceblue;
+}
+.links a.pendentes{
+  border: 1px solid #8FD14F;
+  background-color: #8FD14F;
+}
+.links a.concluidas{
+  border: 1px solid #0CA789;
+  background-color: #0CA789;
+}
+.links a.excluidas{
+  border: 1px solid #EB4045;
+  background-color: #EB4045;
+}
+.links a:hover{
+  color: rgba(0, 0, 0, 0.493);
+}
+.links a:visited{
+  color: #333;
+}
+/* TABELA */
+.quests p {
+  font-size: 12pt;
+}
+.quests table{
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+  color: rgba(105, 105, 105, 0.438);
+  padding:  0px 80px 0 80px;
+  border-collapse: separate; 
+  border-spacing: 10px;
+  margin: 0 0 0 0;
+}
+.quests table tr td{
+  border: 1px solid #8FD14F;
+  border-radius: 8px;
+  padding:  10px;
+  
+}
+.quests table tr td p {
+  float: left;
+}
+.quests table tr:nth-child(even){
+  background-color: #8FD14F;
+  color: aliceblue;
+}
+.quests table tr:nth-child(odd){
+  background-color: white;
+  color: rgba(0, 0, 0, 0.274);
+}
+.quests table tr:nth-child(even) p{
+
+  color: aliceblue;
+}
+.quests table tr:nth-child(odd) p{
+ 
+  color: rgba(0, 0, 0, 0.486);
+}
+
+.quests table tr:hover p{
+  font-size: 14px;
+}
+.quests table tr:hover{
+  transform: scale(1.1);
+  
+}
+/* .quests table tr td:hover:not(tr:nth-child(odd)){
+  background-color: #8FD14F;
+} */
