@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  display: inline-block;
+}
+.box{
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  margin-top: 150px;
+}
+
+.buttons{
+  margin: 20px 0 0 -30px;
+}
+.color{
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 15px;
+}
+#green{
+  background-color: green;
+}
+#yellow{
+  background-color: yellow;
+}
+#red{
+  background-color: red;
+}
+
+.display1{
+  display: none;
+}
+.display2{
+  display: flex;
+}
