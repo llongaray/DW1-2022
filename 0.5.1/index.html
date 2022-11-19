@@ -4,42 +4,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>0.5.1</title>
+  <title>Minhas Tarefas*</title>
   <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
 </head>
 <body>
-<!-- TOPO -->
-
-
-<!-- MEIO -->
-  <main>
-    <div class="container">
-      <div class="title"><p>Minha Tarefa</p></div>
-      <div class="links">
-        <a href="#" class="pendentes">Pendentes</a>
-        <a href="#" class="concluidas">Concluídas</a>
-        <a href="#" class="excluidas">Excluídas</a>
-      </div>
-      <div class="quests">
-        <table>
-          <tr>
-            <td><p> Minha tarefa </p></td>
-          </tr>
-          <tr>
-            <td><p> Minha tarefa </p></td>
-          </tr>
-          <tr>
-            <td><p> Minha tarefa </p></td>
-          </tr>
-          <tr>
-            <td><p> Minha tarefa </p></td>
-          </tr>
-        </table>
+  <section id="container" class="container1">
+    <div class="nav1" id="nav">
+      <h1>Minhas Tarefas</h1>
+      <div class="button1" id="button">
+        <button onclick="pendentesOn()" class="pendentes">PENDENTES</button>
+        <button onclick="concluidasOn()" class="concluidas">CONCLUÍDAS</button>
+        <button onclick="excluidasOn()" class="excluidas">EXCLUÍDAS</button>
       </div>
     </div>
-  </main>
+    <div class="tarefas0" id="tarefas">
+      <ol class="list0P" id="listP">
+        <li class="item0" id="item1P" onmousemove="scaleTransforme1onP()" onmouseout="scaleTransforme1offP()"><p>Almoçar</p></li>
+        <li class="item0" id="item2P" onmousemove="scaleTransforme2onP()" onmouseout="scaleTransforme2offP()"><p>Dar comida para cães</p></li>
+        <li class="item0" id="item3P" onmousemove="scaleTransforme3onP()" onmouseout="scaleTransforme3offP()"><p>Fazer compras</p></li>
+        <li class="item0" id="item4P" onmousemove="scaleTransforme4onP()" onmouseout="scaleTransforme4offP()"><p>Fazer Atividade do curso</p></li>
+      </ol>
+      <ol class="list0C" id="listC">
+        <li class="item0" id="item1C" onmousemove="scaleTransforme1onC()" onmouseout="scaleTransforme1offC()"><p>Caminhada</p></li>
+        <li class="item0" id="item2C" onmousemove="scaleTransforme2onC()" onmouseout="scaleTransforme2offC()"><p>Café da manhã</p></li>
+        <li class="item0" id="item3C" onmousemove="scaleTransforme3onC()" onmouseout="scaleTransforme3offC()"><p>Passear com cães</p></li>
+        <li class="item0" id="item4C" onmousemove="scaleTransforme4onC()" onmouseout="scaleTransforme4offC()"><p>Comprar fone de ouvido</p></li>
+      </ol>
+      <ol class="list0E" id="listE">
+        <li class="item0" id="item1E" onmousemove="scaleTransforme1onE()" onmouseout="scaleTransforme1offE()"><p>Comprar PC</p></li>
+        <li class="item0" id="item2E" onmousemove="scaleTransforme2onE()" onmouseout="scaleTransforme2offE()"><p>Jogar Bola</p></li>
+        <li class="item0" id="item3E" onmousemove="scaleTransforme3onE()" onmouseout="scaleTransforme3offE()"><p>Plantar feijão</p></li>
+        <li class="item0" id="item4E" onmousemove="scaleTransforme4onE()" onmouseout="scaleTransforme4offE()"><p>Fazer Origame</p></li>
+      </ol>
+    </div>
+  </section>
 
-<!-- FIM -->
 
 
 
