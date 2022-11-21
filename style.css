@@ -5,8 +5,8 @@
 *{
   margin: 0;
   padding: 0;
-  /* font-family: 'Roboto'; */
-  font-family: 'Falling Sky', sans-serif;
+  font-family: 'Roboto';
+  /* font-family: 'Falling Sky', sans-serif; */
 }
 body{
   background-image: url("https://i.pinimg.com/originals/28/5b/db/285bdb717d77eb00bb81088a2b4aa674.jpg");
@@ -19,36 +19,155 @@ body{
   align-items: center;  
   display: flex;
 }
-.main{
-  width: 500px;
-  height: 300px;
-  background-color: rgba(255, 255, 255, 0.548);
+footer{
+  background: rgba(165, 164, 164, 0.212);
+  width: 100%;
+  height: 50px;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  display: block;
-  border-radius: 15px;
-  box-shadow: 0 0 19px 5px rgb(255, 255, 255);
+  bottom: 0;
+  left: 0;
+  display: flex;
 }
-
-/* WELCOME */
-
-#title{
+#icon-win{
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 45px;
+  color: white;
+}
+.iniciar{
+  float: left;
+  width: 60px;
+  margin-right: 15px;
+}
+.icons{
+  height: 100%;
+}
+.icons ion-icon{
+  font-size: 25px;
   margin-top: 15%;
 }
-#title h1{
-  margin-bottom: 15px;
+.data-hora{
+  margin: auto 25px;
+  text-align: center;
+  color: white;
 }
-#title h3{
-  margin-bottom: 30px;
+.pesquisa{
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 300px;
+  background-color: #cccccc;
 }
-#buttons .item{
-  padding: 10px 15px;
-  border-radius: 15px;
+.pesquisa ion-icon{
+  float: left;
+  margin: 20px;
+}
+.pesquisa p{
+  margin: 15px 0 0 0;
+  font-size: 14pt;
+}
+.abas{
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+}
+.abas .itens{
+  height: 45px;
+  margin: 0 5px;
   cursor: pointer;
 }
-#buttons #item1{
-  margin-right: 10px;
+footer .icons{
+  color: white;
+}
+footer .icons ion-icon{
+  cursor: pointer;
+}
+
+.tela{
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 35%;
+  left: 38%;
+  display: flex;
+}
+.tela .itens-screen{
+  margin: 0 15px;
+  cursor: pointer;
+}
+.tela  .itens-screen img{
+  height: 60px;
+  padding: 5px;
+  margin: 5px;
+}
+.tela .itens-screen p{
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+}
+
+.abas-screen{
+  position: absolute;
+  top: 10%;
+  left: 25%;
+}
+.ativado.aba-screen{
+  background-color: #d1d1d1f6;
+  border-radius: 10px;
+  border: 1px solid #333;
+  width: 650px;
+  height: 500px;
+}
+.aba-screen .bar{
+  height: 25px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  border-bottom: 1px solid #333;
+  box-shadow: 0 0 5px 0;
+}
+.aba-screen .bar .title{
+  float: left;
+  margin: auto auto auto 15px;
+}
+.aba-screen .bar .exit{
+  float: right;
+  margin: auto 15px auto auto;
+  cursor: pointer;
+  padding: 1px 9px;
+  font-size: 24px;
+  height: 25px;
+}
+.abas-screen .files{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.abas-screen .file  {
+  height: 60px;
+  margin: 25px 25px 0 25px;
+  text-align: center;
+}
+.abas-screen .file-tab{
+  cursor: pointer;
+}
+.abas-screen .file-tab a{  
+  text-decoration: none;
+  color: #000;
+}
+
+.desativado{
+  display: none;
+}
+.abas-screen .notas{
+  background-color: white;
+}
+.abas-screen .notas .bar{
+  background-color: #d1d1d1f6;
+}
+.abas-screen .notas .files{
+  margin: 20px 50px;
+}
+.abas-screen .notas .files p{
+  text-align: left;
 }
