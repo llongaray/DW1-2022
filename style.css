@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700,900');
+@import url('https://fonts.cdnfonts.com/css/falling-sky');
 
 /* GERAL */
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Roboto';
+  /* font-family: 'Roboto'; */
+  font-family: 'Falling Sky', sans-serif;
 }
 body{
   background-image: url("https://i.pinimg.com/originals/28/5b/db/285bdb717d77eb00bb81088a2b4aa674.jpg");
