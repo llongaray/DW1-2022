@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700,900');
+@import url('https://fonts.cdnfonts.com/css/falling-sky');
+
+/* GERAL */
+*{
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Roboto'; */
+  font-family: 'Falling Sky', sans-serif;
+}
+body{
+  background-image: url("https://i.pinimg.com/originals/28/5b/db/285bdb717d77eb00bb81088a2b4aa674.jpg");
+  background-color: #cccccc;
+  /* background-position: center;  */
+  background-repeat: no-repeat; 
+  background-size: cover;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;  
+  display: flex;
+}
+.main{
+  width: 500px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.548);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 0 0 19px 5px rgb(255, 255, 255);
+}
+
+/* WELCOME */
+
+#title{
+  margin-top: 15%;
+}
+#title h1{
+  margin-bottom: 15px;
+}
+#title h3{
+  margin-bottom: 30px;
+}
+#buttons .item{
+  padding: 10px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+#buttons #item1{
+  margin-right: 10px;
+}

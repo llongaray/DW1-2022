@@ -1,113 +1,26 @@
+<!-- 1 (Ligado) | 0 (Desligado) -->
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portifolio DW-1</title>
-  <link rel="stylesheet" href="Styles-Index/styles.css">
-  <link rel="stylesheet" href="Styles-Index/nav-styles.css">
-  <link rel="stylesheet" href="Styles-Index/home-styles.css">
-  <link rel="stylesheet" href="Styles-Index/about-styles.css">
-  <link rel="stylesheet" href="Styles-Index/project-styles.css">
-  <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+  <title>Página Inicial</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
 </head>
 <body>
-  
-
-
-  <!-- MENU -->
-<header>
-<a href="#" class="logo">llongaray</a>
-<ul>
-  <li><a href="#inicio">INICIO</a></li>
-  <li><a href="#sobre">SOBRE</a></li>
-  <li><a href="#projetos">PROJETOS</a></li>
-  <li><a href="#contato">CONTATO</a></li>
-</ul>
-</header>
-<!-- <section class="banner"></section> -->
-<script type="text/javascript">
-  window.addEventListener("scroll", function(){
-      var header = document.querySelector("header");
-      header.classList.toggle("sticky", window.scrollY > 0);
-  })
-</script>
-
-  <div class="main">
-  <section id="home">
-    <div class="conteiner">
-    <h4>Olá, eu sou o</h4>
-    <h1 class="title">LEONARDO LONGARAY</h1>
-    <p class="top-p">
-    Esse é um exercício da cadeira de 'Desenvolvimento Web - 1' na FUNDATEC. <br>
-    Trabalhando no desenvolvimento de web site via HTML, CSS e JS.
-    </p>
-  </div>
-  </section>
-  <div id="sobre"></div>
-  <section id="about">
-    <div class="conteiner">
-    <h1 class="title">< DESENVOLVEDOR ></h1>
-    <p class="top-p">Desenvolvedor Front End Graduado em Tecnologia em Sistemas para Internet pelo Centro Universitário Senac.</p>
-    <p class="down-p">
-    Constantemente antenado à novas tendências tecnológicas, fiz cursos técnicos em Desenvolvimento Web pela Rocketseat, Caelum, Alura e TreinaWeb, Complementação Mobile pela CodeSchool, Treehouse, e Fundamentos do Design Responsivo pela Udacity.<br>
-    Em 4 anos atuando como programador front-end, conheci clientes, agências, desenvolvedores e designers super legais e competentes, atualmente faço parte do time de Desenvolvimento do Grupo Santander Brasil.
-    </p>
-    </div>
-  </section>
-  <div id="projetos"></div>
-  <section id="project">
-    <h1 class="title">PROJETOS</h1>
-    <div class="grid">
-        <div class="box">
-          <a href="0.1.1/index.html" target="_blank">
-            <div class="text">
-            <h1>Exercício 0.1.1</h1>
-            <p>DWFLIX</p>
-            </div>
-            <div class="imgs">
-              <img src="https://files.nsctotal.com.br/s3fs-public/graphql-upload-files/Netflix_0.jpg?jnuSM8x3SDsr0U8YKmMxT5rUYV9H3sBz" alt="">
-            </div>
-          </a></div>
-        <div class="box">
-          <a href="0.2.1/index.html" target="_blank">
-            <div class="text">
-            <h1>Exercício 0.2.1</h1>
-            <p>Oque eu fiz!</p>
-            </div>
-            <div class="imgs">
-              <img src="https://www.foregon.com/blog/wp-content/uploads/2022/01/49crescimentoexpansaodasfintechs-808x455.jpeg" alt="projeto 2">
-            </div>
-          </a>
-        </div>
-        <div class="box">
-          <a href="0.2.2/index.html" target="_blank">
-            <div class="text">
-            <h1>Exercício 0.2.2</h1>
-            <p>O que eu quero agora?</p>
-            </div>
-            <div class="imgs">
-              <img src="https://thumbs.dreamstime.com/b/o-sonho-de-pensamento-do-homem-novo-tem-muitas-ideias-que-olham-acima-79953154.jpg" alt="">
-            </div>
-          </a>
-        </div>
-        <div class="box">
-        <a href="0.4.1/index.html" target="_blank">
-          <div class="text">
-          <h1>Exercício 0.4.1</h1>
-          <p>Tabela</p>
-          </div>
-          <div class="imgs">
-            <img src="" alt="">
-          </div>
-        </a>
+  <section class="main" id="main">
+      <div class="text1" id="title">
+        <h1>Bem-Vindo</h1>
+        <h3>Me chamo Leonardo Longaray e este é minha página de divulgação de projetos.</h3>
       </div>
-    </div>
+      <div class="buttons1" id="buttons">
+        <button class="button item" id="item1">Projetos</button>
+        <button class="button item" id="item2">Contatos</button>
+      </div>
   </section>
-  <div id="contatos"></div>
-  <section id="contact">
-  </section>
-  </div>
 </body>
 </html>
