@@ -27,28 +27,31 @@
   background-color: #444444;
 }
 
-.icons-nav {
-  border: 1px solid red;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr; */
+/* .icons-nav {
   padding: 5px;
   display: flex;
   padding-left: 150px;
-}
+} */
 nav{
   background-color: #333;
   padding: 15px;
   display: grid;
-  grid-template-columns: 1fr 1fr ;
-  position: absolute;
+  grid-template-columns: 1fr 1fr 1fr;
   max-height: 60px;
+  height: 60px;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  box-sizing: border-box;
+  border: 1px solid red;
 }
 .space-left{
   margin: 0 auto;
-  border: 1px solid red;
-  height: 50px;
-  width: 1200px;
-  display: flex;
+  /* height: 50px;
+  width: 100px; */
+  
 }
 #chevron-down{
   position: fixed;
