@@ -1,7 +1,104 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700,900');
 @import url('https://fonts.cdnfonts.com/css/falling-sky');
+:root{
+  --border:1px solid red;
+  
+}
+@media (max-width: 1000px){
+    .aba-screen{
+      width: 450px;
+      height: 300px;
+    }
+}
+@media (max-width: 600px){
+    .aba-screen{
+      width:  250px;
+      height: 100px;
+    }
+}
+
+
+
+/* DAD */
+.container{
+  /* background-color: #333; */
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-height: 60px;
+  height: 60px;
+  justify-content: left;
+
+}
+.box{
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  box-sizing: border-box;
+  border: var(--border);
+  margin: 5px 2.5px;
+  margin: auto 0;
+}
+
+/* ABAS-SCREEN */
+.abas-screen.containerr{
+  margin: 0;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.abas-screen .boxx{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* height: fit-content; */
+  box-sizing: border-box;
+  border: var(--border);
+}
+/* .abas-screen{
+  top: 10%;
+  left: 25%;
+} */
+.ativado.aba-screen{
+  background-color: #d1d1d1f6;
+  border-radius: 10px;
+  border: 1px solid #333;
+  width: 650px;
+  height: 500px;
+}
+.aba-screen .bar{
+  height: 25px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  border-bottom: 1px solid #333;
+  box-shadow: 0 0 5px 0;
+}
+.aba-screen .bar .title{
+  float: left;
+  margin: auto auto auto 15px;
+}
+.aba-screen .bar .exit{
+  float: right;
+  margin: auto 15px auto auto;
+  cursor: pointer;
+  padding: 1px 9px;
+  font-size: 24px;
+  height: 25px;
+}
+.abas-screen .file  {
+  height: 60px;
+  text-align: center;
+}
+.abas-screen .file-tab{
+  cursor: pointer;
+}
+.abas-screen .file-tab a{  
+  text-decoration: none;
+  color: #000;
+}
 
 /* GERAL */
+
 *{
   margin: 0;
   padding: 0;
@@ -20,8 +117,9 @@ body{
   background-size: cover;
   flex-direction: row;
   justify-content: center;
-  align-items: center;  
-  display: flex;
+}
+html, body{
+  height: 100%;
 }
 footer{
   background: rgba(165, 164, 164, 0.212);
@@ -111,54 +209,10 @@ footer .icons ion-icon{
   -webkit-text-stroke-color: #000;
 }
 
-.abas-screen{
-  position: absolute;
-  top: 10%;
-  left: 25%;
-}
-.ativado.aba-screen{
-  background-color: #d1d1d1f6;
-  border-radius: 10px;
-  border: 1px solid #333;
-  width: 650px;
-  height: 500px;
-}
-.aba-screen .bar{
-  height: 25px;
-  border-radius: 10px 10px 0 0;
-  display: flex;
-  border-bottom: 1px solid #333;
-  box-shadow: 0 0 5px 0;
-}
-.aba-screen .bar .title{
-  float: left;
-  margin: auto auto auto 15px;
-}
-.aba-screen .bar .exit{
-  float: right;
-  margin: auto 15px auto auto;
-  cursor: pointer;
-  padding: 1px 9px;
-  font-size: 24px;
-  height: 25px;
-}
-.abas-screen .files{
-  display: flex;
+/* .abas-screen .files{
   text-align: center;
   align-items: center;
-}
-.abas-screen .file  {
-  height: 60px;
-  margin: 25px 25px 0 25px;
-  text-align: center;
-}
-.abas-screen .file-tab{
-  cursor: pointer;
-}
-.abas-screen .file-tab a{  
-  text-decoration: none;
-  color: #000;
-}
+} */
 
 .desativado{
   display: none;
@@ -178,4 +232,8 @@ footer .icons ion-icon{
 .abas-screen .notas .files a{
   color: blue;
   text-decoration: underline;
+}
+.abas-screen{
+  margin: 0;
+  padding: 0;
 }
