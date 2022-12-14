@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700,900');
+
+body{
+    background-image: url(https://cdn.wallpapersafari.com/96/25/6ENBpK.jpg);
+    backdrop-filter: blur(5px);
+    background-repeat: no-repeat;
+    background-size: 125%;
+    backdrop-filter: brightness(55%);
+    backdrop-filter: contrast(100%);
+    font-family: 'Roboto';
+    font-weight: 900;
+}
+.slider{
+    box-shadow: 0px 0px 50px 10px black;
+
+}
+.title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.title p{
+    color: white;
+    font-size: 24pt;
+    margin: 0;
+    -webkit-text-stroke: 1px #000;
+      text-stroke: 1px #FFF;
+}
+
+.slide div.title{
+    position: absolute;
+}
+/* .slide div.title p{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.719);
+} */

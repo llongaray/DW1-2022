@@ -1,27 +1,14 @@
+let count = 1;
+document.getElementById("radio1").checked = true;
 
+setInterval(function() {
+    nextImage();
+}, 2000)
 
-
-function openProjects(){
-  document.getElementById('project').classList.replace('desativado', 'ativado');
-  document.getElementById('abas-screen').classList.replace('desativado', 'ativado');
-}
-function openReadme(){
-  document.getElementById('readme').classList.replace('desativado', 'ativado');
-  document.getElementById('abas-screen').classList.replace('desativado', 'ativado');
-}
-function openContacts(){
-  document.getElementById('contact').classList.replace('desativado', 'ativado');
-  document.getElementById('abas-screen').classList.replace('desativado', 'ativado');
-}
-function exitProjects(){
-  document.getElementById('project').classList.replace('ativado', 'desativado');
-  document.getElementById('abas-screen').classList.replace('ativado', 'desativado');
-}
-function exitReadme(){
-  document.getElementById('readme').classList.replace('ativado', 'desativado');
-  document.getElementById('abas-screen').classList.replace('ativado', 'desativado');
-}
-function exitContact(){
-  document.getElementById('contact').classList.replace('ativado', 'desativado');
-  document.getElementById('abas-screen').classList.replace('ativado', 'desativado');
+function nextImage() {
+    count++;
+    if (count>6) {
+        count=1;
+    }
+    document.getElementById("radio"+count).checked = true;
 }

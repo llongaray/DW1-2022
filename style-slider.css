@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700,900');
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider{
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+.slides{
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+.slides input{
+  display: none;
+}
+.slide{
+  width: 25%;
+  position: relative;
+  transition: 1s;
+}
+.slide img{
+  width: 800px;
+  height: 400px;
+}
+
+.manual-navigation{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+.manual-btn:hover{
+  background-color: white;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+#radio4:checked ~ .first {
+  margin-left: -75%;
+}
+#radio5:checked ~ .first {
+  margin-left: -100%;
+}
+#radio6:checked ~ .first {
+  margin-left: -125%;
+}
+
+.navegation-auto div{
+  border: 2px solid #20e6ff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navegation-auto{
+  position: absolute;
+  width: 800px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+.navegation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navegation-auto .auto-btn1{
+  background-color: white;
+}
+#radio2:checked ~ .navegation-auto .auto-btn2{
+  background-color: white;
+}
+#radio3:checked ~ .navegation-auto .auto-btn3{
+  background-color: white;
+}
+#radio4:checked ~ .navegation-auto .auto-btn4{
+  background-color: white;
+}
+#radio5:checked ~ .navegation-auto .auto-btn5{
+  background-color: white;
+}
+#radio6:checked ~ .navegation-auto .auto-btn6{
+  background-color: white;
+}
