@@ -1,239 +1,150 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:700,900');
-@import url('https://fonts.cdnfonts.com/css/falling-sky');
-:root{
-  --border:1px solid red;
-  
-}
-@media (max-width: 1000px){
-    .aba-screen{
-      width: 450px;
-      height: 300px;
-    }
-}
-@media (max-width: 600px){
-    .aba-screen{
-      width:  250px;
-      height: 100px;
-    }
+/* STYLE FOR SLIDER */
+
+:root {
+  --border: 1px ;
+  --bordertest: 1px ;
 }
 
-
-
-/* DAD */
-.container{
-  /* background-color: #333; */
-  padding: 5px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  max-height: 60px;
-  height: 60px;
-  justify-content: left;
-
-}
-.box{
-  display: flex;
-  justify-content: center;
-  height: fit-content;
-  box-sizing: border-box;
-  border: var(--border);
-  margin: 5px 2.5px;
-  margin: auto 0;
-}
-
-/* ABAS-SCREEN */
-.abas-screen.containerr{
-  margin: 0;
-  justify-content: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.abas-screen .boxx{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  /* height: fit-content; */
-  box-sizing: border-box;
-  border: var(--border);
-}
-/* .abas-screen{
-  top: 10%;
-  left: 25%;
-} */
-.ativado.aba-screen{
-  background-color: #d1d1d1f6;
-  border-radius: 10px;
-  border: 1px solid #333;
-  width: 650px;
-  height: 500px;
-}
-.aba-screen .bar{
-  height: 25px;
-  border-radius: 10px 10px 0 0;
-  display: flex;
-  border-bottom: 1px solid #333;
-  box-shadow: 0 0 5px 0;
-}
-.aba-screen .bar .title{
-  float: left;
-  margin: auto auto auto 15px;
-}
-.aba-screen .bar .exit{
-  float: right;
-  margin: auto 15px auto auto;
-  cursor: pointer;
-  padding: 1px 9px;
-  font-size: 24px;
-  height: 25px;
-}
-.abas-screen .file  {
-  height: 60px;
-  text-align: center;
-}
-.abas-screen .file-tab{
-  cursor: pointer;
-}
-.abas-screen .file-tab a{  
-  text-decoration: none;
-  color: #000;
-}
-
-/* GERAL */
-
-*{
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto';
-  /* font-family: 'Falling Sky', sans-serif; */
-  text-decoration: none;
-  font-style: none;
-  list-style: none;
-  color: #000;
-}
-body{
-  background-image: url("https://i.pinimg.com/originals/28/5b/db/285bdb717d77eb00bb81088a2b4aa674.jpg");
-  background-color: #cccccc;
-  /* background-position: center;  */
-  background-repeat: no-repeat; 
-  background-size: cover;
-  flex-direction: row;
-  justify-content: center;
-}
-html, body{
-  height: 100%;
-}
-footer{
-  background: rgba(165, 164, 164, 0.212);
   width: 100%;
-  height: 50px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  height: 100vh;
   display: flex;
-}
-#icon-win{
-  margin-left: 10px;
-  cursor: pointer;
-  font-size: 45px;
-  color: white;
-}
-.iniciar{
-  float: left;
-  width: 60px;
-  margin-right: 15px;
-}
-.icons{
-  height: 100%;
-}
-.icons ion-icon{
-  font-size: 25px;
-  margin-top: 15%;
-}
-.data-hora{
-  margin: auto 25px;
-  text-align: center;
-  color: white;
-}
-.pesquisa{
-  align-items: center;
-  position: relative;
-  height: 100%;
-  width: 300px;
-  background-color: #cccccc;
-}
-.pesquisa ion-icon{
-  float: left;
-  margin: 20px;
-}
-.pesquisa p{
-  margin: 15px 0 0 0;
-  font-size: 14pt;
-}
-.abas{
-  margin: 0 auto;
-  width: 500px;
-  text-align: center;
-}
-.abas .itens{
-  height: 45px;
-  margin: 0 5px;
-  cursor: pointer;
-}
-footer .icons{
-  color: white;
-}
-footer .icons ion-icon{
-  cursor: pointer;
-}
-
-.tela{
-  position: absolute;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  text-align: center;
-  top: 35%;
-  left: 38%;
+  align-items: center;
+}
+
+.slider {
+  border: var(---border);
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 10px 5px 13px 2px black;
+}
+.slides {
+  border: var(--border);
+  width: 400%;
+  height: 400px;
   display: flex;
 }
-.tela .itens-screen{
-  margin: 0 15px;
-  cursor: pointer;
-}
-.tela  .itens-screen img{
-  height: 60px;
-  padding: 5px;
-  margin: 5px;
-}
-.tela .itens-screen p{
-  color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #000;
-}
-
-/* .abas-screen .files{
-  text-align: center;
-  align-items: center;
-} */
-
-.desativado{
+.slides input {
   display: none;
 }
-.abas-screen .notas{
+.slide {
+  border: var(--border);
+  width: 25%;
+  position: relative;
+  transition: 1s;
+}
+.slide img {
+  width: 800px;
+  height: 400px;
+  border: var(--border);
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+  border: var(--border);
+}
+
+.manual-btn {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+.manual-btn:hover {
   background-color: white;
 }
-.abas-screen .notas .bar{
-  background-color: #d1d1d1f6;
+
+#radio1:checked ~ .first {
+  margin-left: 0;
 }
-.abas-screen .notas .files{
-  margin: 20px 50px;
+#radio2:checked ~ .first {
+  margin-left: -25%;
 }
-.abas-screen .notas .files p{
-  text-align: left;
+#radio3:checked ~ .first {
+  margin-left: -50%;
 }
-.abas-screen .notas .files a{
-  color: blue;
-  text-decoration: underline;
+#radio4:checked ~ .first {
+  margin-left: -75%;
 }
-.abas-screen{
+#radio5:checked ~ .first {
+  margin-left: -100%;
+}
+#radio6:checked ~ .first {
+  margin-left: -125%;
+}
+#radio7:checked ~ .first {
+  margin-left: -150%;
+}
+
+.navegation-auto div {
+  border: 2px solid #20e6ff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navegation-auto {
+  position: absolute;
+  width: 800px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+.navegation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navegation-auto .auto-btn1 {
+  background-color: white;
+}
+#radio2:checked ~ .navegation-auto .auto-btn2 {
+  background-color: white;
+}
+#radio3:checked ~ .navegation-auto .auto-btn3 {
+  background-color: white;
+}
+#radio4:checked ~ .navegation-auto .auto-btn4 {
+  background-color: white;
+}
+#radio5:checked ~ .navegation-auto .auto-btn5 {
+  background-color: white;
+}
+#radio6:checked ~ .navegation-auto .auto-btn6 {
+  background-color: white;
+}
+#radio7:checked ~ .navegation-auto .auto-btn7 {
+  background-color: white;
+}
+/* FIM STYLE FOR SLIDER */
+
+.navbar{
   margin: 0;
   padding: 0;
+  text-align: center;
+  border: var(--bordertest);
+  width: 800px;
+  height: 80px;
+}
+.navbar h1{
+  height: 80px;
+  margin: 20px;
+  font-size: 40px;
+  text-shadow: 1px 1px 2px black;
+  color: rgb(241, 241, 241);
 }
