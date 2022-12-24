@@ -1,136 +1,91 @@
-<!-- 1 (Ligado) | 0 (Desligado) -->
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página Inicial</title>
+  <title>Página principal</title>
   <link rel="stylesheet" href="style.css">
-  <script src="index.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-  <section class="main" id="main">
-    <section class="tela">
-      <div class="folder-screen itens-screen" onclick="openProjects()">
-        <img src="https://uxwing.com/wp-content/themes/uxwing/download/file-and-folder-type/folder-directory-files-icon.png" alt="folder" id="folder1" class="itens">
-        <p>PROJECTS</p>
-      </div>
-      <div class="file-screen itens-screen" onclick="openReadme()">
-        <img src="https://cdn-icons-png.flaticon.com/512/124/124837.png" alt="file" id="file1" class="itens">
-        <p>README</p>
-      </div>
-      <div class="file-screen itens-screen" onclick="openContacts()">
-        <img src="https://cdn-icons-png.flaticon.com/512/124/124837.png" alt="file" id="file1" class="itens">
-        <p>CONTACTS</p>
-      </div>
-    </section>
-    <section class="abas-screen containerr" id="abas-screen">
-      <div class="boxx"></div>
-      <div class="boxx">
-      <div class="projects desativado aba-screen" id="project">
-        <div class="bar"><p class="title">Projetos</p><ion-icon name="exit-outline" class="exit" onclick="exitProjects()"></ion-icon></div>
-        <div class="files container">
-          <div class="file-tab box">
-            <a href="https://llongaray.github.io/DW1-2022/0.1.1/index.html" target="_blank">
-            <img src="https://uxwing.com/wp-content/themes/uxwing/download/file-and-folder-type/folder-directory-files-icon.png" alt="file" class="file">
-            <p>0.1.1</p></a>
-          </div>
-          <div class="file-tab box">
-            <a href="https://llongaray.github.io/DW1-2022/0.2.1/index.html" target="_blank">
-            <img src="https://uxwing.com/wp-content/themes/uxwing/download/file-and-folder-type/folder-directory-files-icon.png" alt="file" class="file">
-            <p>0.2.1</p></a>
-          </div>
-          <div class="file-tab box">
-            <a href="https://llongaray.github.io/DW1-2022/0.2.2/index.html" target="_blank">
-            <img src="https://uxwing.com/wp-content/themes/uxwing/download/file-and-folder-type/folder-directory-files-icon.png" alt="file" class="file">
-            <p>0.2.2</p></a>
-          </div>
-          <div class="file-tab box">
-            <a href="https://llongaray.github.io/DW1-2022/0.4.1/index.html" target="_blank">
-            <img src="https://uxwing.com/wp-content/themes/uxwing/download/file-and-folder-type/folder-directory-files-icon.png" alt="file" class="file">
-            <p>0.4.1</p></a>
-          </div>
-          <div class="file-tab box">
-            <a href="https://llongaray.github.io/DW1-2022/0.5.1/index.html" target="_blank">
-            <img src="https://uxwing.com/wp-content/themes/uxwing/download/file-and-folder-type/folder-directory-files-icon.png" alt="file" class="file">
-            <p>0.5.1</p>
-            </a>
-          </div>
-          <div class="file-tab box">
-            <a href="https://llongaray.github.io/DW1-2022/0.7.1/index.html" target="_blank">
-            <img src="https://uxwing.com/wp-content/themes/uxwing/download/file-and-folder-type/folder-directory-files-icon.png" alt="file" class="file">
-            <p>0.7.1</p></a>
-          </div>
-        </div>
-      </div>
-      <div class="readme desativado aba-screen notas" id="readme">
-        <div class="bar"><p class="title">Bloco de notas (README.txt)</p><ion-icon name="exit-outline" class="exit" onclick="exitReadme()"></ion-icon></div>
-        <div class="files">
-          <p>Olá eu meu chamo Leonardo Longaray dos Santos, sou dev iniciantes e este é meu portfólio. <br>
-          <br>
-          Na pasta "PROJECTS" você irá encontar os meus projetos que fiz por orientação de meu professor no meu curso de Técnico de Informática na FUNDATEC. <br>
-          Eles são bem simples mas com o tempo espero me aperfeiçoar para melhorar a qualidade de meus projetos WEB. <br>
-          Essa pasta contêm dentro outras pastas e ao clickar nelas abrirá uma nova página referente ao projeto clickado. <br>
-          <br>
-          <br>
-          Espero que goste e tenho um bom dia, obrigado! 
-          </p>
-        </div>
-      </div>
-      <div class="contacts desativado aba-screen notas" id="contact">
-        <div class="bar"><p class="title">Bloco de notas (Contatos.txt)</p><ion-icon name="exit-outline" class="exit" onclick="exitContact()"></ion-icon></div>
-        <div class="files">
-          <p>
-            <ion-icon name="logo-whatsapp"></ion-icon> 
-              Whatsapp: (51)99437-7373 
-              <br>
-            <ion-icon name="logo-facebook"></ion-icon> 
-              Facebook: <a href="https://www.facebook.com/leonardo.longaray/" target="_blank">Leonardo Longaray</a> 
-              <br>
-            <ion-icon name="logo-instagram"></ion-icon> 
-              Instagram (Pessoal): <a href="https://www.instagram.com/llongaray77/" target="_blank">@llongaray77</a> 
-              <br>
-            <ion-icon name="logo-instagram"></ion-icon> 
-              Instagram (Oficial): <a href="https://www.instagram.com/llongaray_oficial/" target="_blank">@llongaray_oficial</a> 
-              <br>
-            <ion-icon name="logo-linkedin"></ion-icon> 
-              Linkedin: <a href="https://www.linkedin.com/in/leonardo-longaray-dos-santos-6a410b229/" target="_blank">Leonardo Longaray</a> <br>
-            <ion-icon name="logo-github"></ion-icon> 
-              GitHub: <a href="https://github.com/llongaray" target="_blank">llongaray</a> 
-              <br>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="boxx"></div>
-    </section>
-    <footer>
-      <div class="iniciar">
-        <ion-icon name="logo-windows" id="icon-win"></ion-icon>
-      </div>
-      <div class="pesquisa">
-        <ion-icon name="search-outline"></ion-icon>
-        <p>Digite aqui para pesquisar</p>
-      </div>  
-      <div class="abas">
-        <img src="https://uxwing.com/wp-content/themes/uxwing/download/file-and-folder-type/folder-directory-files-icon.png" alt="folder" id="folder1" class="itens">
-        <img src="https://cdn-icons-png.flaticon.com/512/124/124837.png" alt="file" id="file1" class="itens">
-        <img src="https://cdn-icons-png.flaticon.com/512/124/124837.png" alt="file" id="file2" class="itens">
-        <!-- <img src="https://cdn-icons-png.flaticon.com/512/124/124837.png" alt="file" id="file3" class="itens"> -->
-      </div>
-      <div class="icons">
-        <ion-icon name="volume-mute-outline"></ion-icon>
-        <ion-icon name="globe-outline"></ion-icon>
-        <ion-icon name="bluetooth-outline"></ion-icon>
-        <ion-icon name="battery-full-outline"></ion-icon>
-      </div>
-      <div class="data-hora"><p>12:12</p><p>12/12/12</p></div>
-    </footer>
+
+  <section class="title navbar">
+
+    <h1>PROJETOS 2022/2</h1>
+
   </section>
+
+    <!-- SLIDER -->
+  <section class="slider">
+  
+  <!-- SLIDES -->
+    <div class="slides">
+      
+       <!-- Radio Buttons -->
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <input type="radio" name="radio-btn" id="radio5">
+      <input type="radio" name="radio-btn" id="radio6">
+      <input type="radio" name="radio-btn" id="radio7">
+       <!-- Fim Radio Button -->
+
+       <!-- Slide IMG -->
+       <div class="slide first">
+        <a href="https://github.com/llongaray/DW1-2022/tree/main/0.1.1">
+          <img src="https://github.com/llongaray/GitHub/blob/main/0.1.1.png?raw=true" alt="Imagem 1">
+        </a>
+        </div>
+      <div class="slide">
+        <a href="https://github.com/llongaray/DW1-2022/tree/main/0.2.1"><img src="https://github.com/llongaray/GitHub/blob/main/0.2.1.png?raw=true" alt="Imagem 2"></a>
+      </div>
+      <div class="slide">
+        <a href="https://github.com/llongaray/DW1-2022/tree/main/0.2.2"><img src="https://github.com/llongaray/GitHub/blob/main/0.2.2.png?raw=true" alt="Imagem 3"></a>
+      </div>
+      <div class="slide">
+        <a href="https://github.com/llongaray/DW1-2022/tree/main/0.3.1"><img src="https://github.com/llongaray/GitHub/blob/main/0.4.1.png?raw=true" alt="Imagem 4"></a>
+      </div>
+      <div class="slide">
+        <a href="https://github.com/llongaray/DW1-2022/tree/main/0.4.1"><img src="https://github.com/llongaray/GitHub/blob/main/0.5.1.png?raw=true" alt="Imagem 5"></a>
+      </div>
+      <div class="slide">
+        <a href="https://github.com/llongaray/DW1-2022/tree/main/0.7.1"><img src="https://github.com/llongaray/GitHub/blob/main/0.7.1.png?raw=true" alt="Imagem 6"></a>
+      </div>
+      <div class="slide">
+        <a href="https://github.com/llongaray/DW1-2022/tree/main/0.9.1"><img src="https://github.com/llongaray/GitHub/blob/main/0.9.1.png?raw=true" alt="Imagem 7"></a>
+      </div>
+       <!-- Fim Slide IMG -->
+
+       <!-- Navigation AUTO -->
+      <div class="navegation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+        <div class="auto-btn5"></div>
+        <div class="auto-btn6"></div>
+        <div class="auto-btn7"></div>
+      </div>
+       <!-- Fim Navigation AUTO -->
+    </div>
+     <!-- FIM SLIDER -->
+
+     <!-- Label -->
+    <div class="manual-navigation">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+      <label for="radio5" class="manual-btn"></label>
+      <label for="radio6" class="manual-btn"></label>
+      <label for="radio7" class="manual-btn"></label>
+    </div>
+     <!-- Fim Label -->
+     
+  </section>
+
+
+  <script src="index.js"></script>
 </body>
 </html>
