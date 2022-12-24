@@ -1,1 +1,1 @@
-![alt text](https://llongaray.github.io/DW1-2022/0.2.1/)
+![alt text](https://github.com/llongaray/GitHub/blob/main/0.2.1.png?raw=true)
