@@ -24,8 +24,12 @@
     height: 50vh;
     padding: 1vw;
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    /* display: flex;
+    justify-content: space-between;
+    flex-direction: row; */
     /* flex-direction: row-reverse; */
     /* flex-direction: column; */
     /* flex-direction: column-reverse; */
@@ -34,8 +38,8 @@
     /* flex-direction: unset; */
 }
 .box{
-    width: 10vw;
-    height: 20vh;
+    width: 150px;
+    height: 150px;
     border: 1px solid white;
     background-color: red;
 }
