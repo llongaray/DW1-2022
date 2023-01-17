@@ -9,38 +9,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <div class="title">
-                <p>Meu Chat</p>
-            </div>
-            <div class="settings">
-                <svg class="icon-settings" aria-label="Ajustes">
-                    <use xlink:href="icons.svg#icon-settings"></use>
-                </svg>
-            </div>
-        </nav>
-
-        <div class="box chat">
-            <ul>
-               <li class="left">
-                   <div>
-                       <p>Oi...</p>
-                       <svg class="icon-time" aria-label="Hora da mensagem">
-                           <use xlink:href="icons.svg#icon-time"></use>
-                       </svg>
-                   </div>
-               </li>
-               <li class="left">
-                   <div>
-                       <p>Tu não me ama mais?</p>
-                       <svg class="icon-time" aria-label="Hora da mensagem">
-                           <use xlink:href="icons.svg#icon-time"></use>
-                       </svg>
-                   </div>
-               </li>
-            </ul>
-        </div>
+    <div class="chat-container">
+  <div class="message-container sent">
+    <div class="message">Mensagem enviada</div>
+    <div class="options">
+      <i class="fas fa-ellipsis-vertical"></i>
+      <div class="dropdown">Opções de mensagem</div>
     </div>
+    <div class="double-check-container">
+      <i class="fas fa-check"></i>
+      <i class="fas fa-check-double" style="display: none;"></i>
+    </div>
+  </div>
+  <div class="message-container received">
+    <div class="message">Mensagem recebida</div>
+    <div class="options">
+      <i class="fas fa-ellipsis-vertical"></i>
+      <div class="dropdown">Opções de mensagem</div>
+    </div>
+    <div class="double-check-container">
+      <i class="fas fa-check"></i>
+      <i class="fas fa-check-double" style="display: none;"></i>
+    </div>
+  </div>
+</div>
 </body>
 </html>
