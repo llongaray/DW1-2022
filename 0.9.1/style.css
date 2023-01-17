@@ -1,120 +1,64 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:700,900');
-
-:root {
-  --color-primary: #075e54;
-  --color-secondary: rgba(255, 220, 178, 0.77);
-  --color-tertiary: rgba(240, 248, 255, 0.787);
-  --color-quaternary: rgba(49, 197, 49, 0.79);
-  --color-text: #444;
-  --color-text-light: #888;
-  --color-border: #000;
-  --color-border-light: #ccc;
-  --font-primary: 'Roboto', sans-serif;
+.chat-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: var(--font-primary);
+.message-container {
+  background-color: #3b4a54;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  position: relative;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sent {
+  align-self: flex-end;
+  background-color: #00a884;
 }
 
-.container {
-    background-color: var(--color-secondary);
-    width: 30vw;
-    height: 80vh;
-    border: 1px solid var(--color-border);
-    border-radius: 5px;
-    overflow: hidden;
+.received {
+  align-self: flex-start;
 }
 
-nav {
-    height: 8vh;
-    overflow: hidden;
-    border-bottom: 1px solid var(--color-border);
-    display: flex;
-    background-color: var(--color-primary);
+.options {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
 }
 
-nav .title {
-    margin-left: 15px;
+.options:hover {
+  cursor: pointer;
 }
 
-nav .title p {
-    font-size: 18pt;
-    color: #fff;
+.options i {
+  color: white;
+  font-size: 20px;
 }
 
-nav .settings {
-    align-self: flex-end;
-    text-align: right;
-    justify-content: flex-end;
-    height: 100%;
+.options:hover .dropdown {
+  display: block;
 }
 
-nav .icon-settings {
-    margin: 0 15px;
-    height: 6vh;
-    fill: var(--color-text-light);
-    cursor: pointer;
+.dropdown {
+  background-color: #3b4a54;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+  position: absolute;
+  right: 50px;
+  top: 30px;
 }
 
-nav .icon-settings:hover {
-height: 6.5vh;
+.double-check-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
-.chat {
-overflow: hidden;
-height: 100%;
-background-image: url(https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png);
-}
-
-.chat ul {
-list-style: none;
-padding: 15px;
-margin: 0;
-}
-
-.chat ul li {
-margin: 5px;
-width: fit-content;
-display: flex;
-padding: 10px;
-}
-
-.chat ul li.left {
-background-color: var(--color-tertiary);
-}
-
-.chat ul li.right {
-margin-left: auto;
-background-color: var(--color-quaternary);
-}
-
-.chat ul svg {
-width: 10px;
-margin: 0 0 0 5px;
-fill: var(--color-text-light);
-}
-
-.chat ul li.left svg {
-fill: var(--color-border-light);
-}
-
-/* Media Queries */
-@media (max-width: 767px) {
-.container {
-width: 90vw;
-height: 90vh;
-}
+.double-check-container i {
+  color: white;
+  font-size: 20px;
 }
