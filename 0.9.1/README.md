@@ -1,4 +1,4 @@
-####Meu Chat
+Meu Chat
 Este é um projeto de chat simples para conversar com amigos e familiares. Ele foi construído com HTML, CSS e JavaScript e é responsivo para todos os dispositivos.
 
 Recursos
